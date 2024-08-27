@@ -1,0 +1,465 @@
+@keyframes fade {
+	from {
+		border-color: rgb(173, 182, 196);
+		color: #ADB6C4;
+	}
+
+	to {
+		border-color: #001B2E;
+		color: #001B2E;
+	}
+
+}
+
+@keyframes darkFade {
+	from {
+		filter: brightness(100%);
+	}
+
+	;
+
+	to {
+		filter: brightness(50%);
+	}
+
+	;
+}
+
+@keyframes darkFade2 {
+	from {
+		filter: brightness(100%);
+	}
+
+	;
+
+	to {
+		filter: brightness(70%);
+	}
+
+	;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-image: linear-gradient(rgba(150, 150, 150, 0), rgb(150, 150, 150) 300%);
+	background-attachment: fixed;
+
+}
+
+.layout {
+	display: grid;
+	grid-template-rows: 1vh auto;
+}
+
+.teilOben {
+	position: fixed;
+	width: 100vw;
+	background-color: #294C60;
+	box-shadow: 0 0 4px 5px #FFEFD3, 0 0 9px 9px white;
+	z-index: 99;
+}
+
+.divOben {
+	display: grid;
+	grid-template-columns: auto 1fr auto auto auto;
+}
+
+.mcs {
+	width: 30px;
+	margin-right: 0px;
+	margin-left: 15px;
+	margin-top: 3px;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.mcs:hover {
+	color: yellow;
+	text-transform: lowercase;
+}
+
+.max {
+	font-weight: bold;
+	margin-left: 0px;
+	margin-top: 3px;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	grid-column: 2;
+}
+
+.hobbies {
+	border-style: solid;
+	border-color: #ADB6C4;
+	border-width: 3px;
+	margin-right: 30px;
+	grid-column: 4;
+	font-size: 20px;
+	border-radius: 20px;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+.hobbies:hover {
+	border-width: fill;
+	border-color: #001B2E;
+	color: #001B2E;
+	animation: fade 0.2s;
+}
+
+.wawa {
+	grid-column: 3;
+	margin-right: 30px;
+	border-style: solid;
+	border-color: #ADB6C4;
+	border-width: 3px;
+	margin-right: 20px;
+	font-size: 20px;
+	border-radius: 20px;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+.wawa:hover {
+	border-width: fill;
+	border-color: #001B2E;
+	color: #001B2E;
+	animation: fade 0.2s;
+}
+
+.galerie {
+	margin-left: 0;
+	border-style: solid;
+	border-color: #ADB6C4;
+	border-width: 3px;
+	margin-right: 15px;
+	grid-column: 5;
+	font-size: 20px;
+	border-radius: 20px;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+.galerie:hover {
+	border-width: fill;
+	border-color: #001B2E;
+	color: #001B2E;
+	animation: fade 0.2s;
+}
+
+.cv {
+	margin-left: 0;
+	border-style: solid;
+	border-color: #ADB6C4;
+	border-width: 3px;
+	margin-right: 30px;
+	grid-column: 6;
+	font-size: 20px;
+	border-radius: 20px;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+.cv:hover {
+	border-width: fill;
+	border-color: #001B2E;
+	color: #001B2E;
+	animation: fade 0.2s;
+}
+
+.teilUnten {
+	grid-row: 2;
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 20vw auto auto 20vw;
+	height: 100vh;
+}
+
+.mitte {
+	grid-column: 2;
+}
+
+.mitte h1 {
+	text-align: center;
+	font-size: 2.5em;
+	color: #001B2E;
+}
+
+.mitte h2 {
+	font-size: 1em;
+}
+
+.egg {
+	cursor: pointer;
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 15px;
+	font-size: 2em;
+	color: yellow;
+	height: 20px;
+	width: 20px;
+	display: none;
+}
+
+.image {
+	cursor: pointer;
+	grid-column: 2;
+	display: inline-block;
+	margin: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 480px;
+	width: 640px;
+	animation-timing-function: ease;
+}
+
+.image:hover {
+	filter: brightness(70%);
+	animation: darkFade2 0.2s;
+}
+
+#image2 {
+	grid-column: 3;
+}
+
+#image4 {
+	grid-column: 3;
+}
+
+.background {
+	position: fixed;
+	right: -9999px;
+	right: -9999px;
+	width: 120vw;
+	height: 120vh;
+	background-color: #001B2E;
+	z-index: 2;
+}
+
+.imageText {
+	margin: auto;
+	text-align: center;
+	font-size: 2em;
+}
+
+#tabelle {
+	border-style: solid;
+	font-size: 1.5em;
+	width: 100%;
+}
+
+#tabelle tr:nth-child(even) {
+	background-color: AliceBlue;
+}
+#tabelle tr:nth-child(odd) {
+	background-color: white;
+}
+
+.teilLinks {
+	margin-top: 50px;
+	margin-left: 15px;
+}
+
+.teilLinks ul {
+	float: left;
+	display: block;
+
+}
+
+.bild {
+	height: 25;
+	width: 25;
+	left: 76%;
+	bottom: 60px;
+	position: relative;
+}
+
+.rechner {
+	border-style: solid;
+	margin: auto;
+	margin-top: 60px;
+	height: fit-content;
+}
+
+.rechnerButton {
+	border: none;
+	width: 100%;
+	height: fit-content;
+	font-size: 5em;
+}
+
+input[type="text"] {
+	border: none;
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	font-size: 7em;
+}
+
+ul a {
+	display: block;
+}
+
+.mitteCv {
+	margin-top: 50px;
+	height: fit-content;
+	grid-column: 2;
+	box-shadow: 0 0 5px 5px#a0d8e2;
+	display: grid;
+	grid-template-columns: 25% 70%;
+	margin-bottom: 10px;
+	background-color: rgb(250, 250, 250);
+}
+
+.linksCv {
+	margin: 6px;
+	grid-column: 1;
+}
+
+#ka {
+	margin: 6px;
+	height: initial;
+	width: 100%;
+	border-radius: 20%;
+	padding: 10px;
+	background-color: #294C60;
+	display: inline;
+}
+
+.linksCv p {
+	font-size: large;
+	margin-top: 10px;
+	margin-left: 10px;
+	box-shadow: 0 0 10 black;
+}
+
+.bildCv {
+	margin: 6px;
+}
+
+.waza {
+	position: absolute;
+	margin: 140px;
+	color: white;
+	z-index: 3;
+	display: none;
+}
+
+.linkSammlung {
+	margin-top: 50px;
+	margin-left: 50px;
+	background-color: #294C60;
+	border-radius: 5%;
+	width: fit-content;
+	padding: 5px;
+	display: inline-block;
+}
+
+.rechtsCv {
+	margin-left: 75px;
+	margin-top: 20px;
+}
+.rechtsCv h3{
+	font-size: 1.3em;
+}
+
+footer {
+	background-color: #294C60;
+	padding: 10px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #a0d8e2;
+}
+
+footer a:hover {
+	color: whitesmoke;
+}
+
+.rechtsCv h1 {
+	margin-left: 20px;
+	font-size: 2.5em;
+	margin-left: 30px;
+	margin-top: 20px;
+	color: rgb(255, 255, 255);
+	text-shadow: 0 0 8px#001B2E;
+}
+
+.schulbildung {
+	display: grid;
+	grid-template-columns: 20% auto auto;
+}
+
+.schulbildung h3 {
+	margin-right: 0;
+}
+
+.schule {
+	grid-column: 1;
+}
+
+.schule2 {
+	grid-column: 3;
+}
+
+.schulbildung ul {
+	list-style: none;
+	font-size: 1.2em;
+}
+
+#cvCanvas {
+	border: solid 1px;
+
+}
+
+.schule3 {
+	grid-column: 2;
+	grid-row: 2;
+	text-align: right;
+}
+
+.schule li,
+.schule2 li,
+.schule3 li {
+	margin-bottom: 5px;
+}
+
+.hobbys {
+	font-size: 1.2em;
+}
+
+.hobbys li {
+	margin-bottom: 5px;
+}
+.kenntnisse{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	font-size: 1.2em;
+}
+.spalte1{
+	grid-column: 1;
+
+}
+.spalte2{
+	grid-column: 2;
+}
+.spalte1 p{
+	margin: inherit;
+	margin-bottom: 94px;
+}
+.kenntnisse h4{
+	margin: 0;
+}
+.spalte2 p{
+	margin: 0;
+	margin-bottom: 5px;
+}

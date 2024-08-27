@@ -1,0 +1,61 @@
+<!doctype hmtl>
+<html lang="de">
+
+<head>
+    <title>Max</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <section class="layout">
+        <section class="teilOben">
+            <section class="divOben">
+                <a href="index.html" class="max" style="margin-left: 15px;">Max</a>
+                <a href="monkeytype.html" class="wawa">Monkeytype!</a>
+                <a href="galerie.html" class="galerie" style="margin-left: 0;">Galerie</a>
+                <a href="cv.html" class="cv" style="margin-left: 0;">Cv</a>
+            </section>
+        </section>
+        <section class="teilUnten" style="grid-template-columns: 1fr 50vw 1fr;">
+            <div class="mitte">
+                <table class="rechner">
+                    <tr>
+                        <th style="border-style: none; font-size: 0.5em; height: 7rem; width: 69px; text-align: right;"
+                            colspan="3">
+                            <input type="text" id="feld">
+                        </th>
+                        <td><input type="button" class="rechnerButton" value="←" onclick="deleteOne()"
+                                style="font-size: 5em;"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="rechnerButton" value="7" onclick="rechnerZahlen('7')"></td>
+                        <td><input type="button" class="rechnerButton" value="8" onclick="rechnerZahlen('8')"></td>
+                        <td><input type="button" class="rechnerButton" value="9" onclick="rechnerZahlen('9')"></td>
+                        <td><input type="button" class="rechnerButton" value="C" onclick="clearThis()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="rechnerButton" value="4" onclick="rechnerZahlen('4')"></td>
+                        <td><input type="button" class="rechnerButton" value="5" onclick="rechnerZahlen('5')"></td>
+                        <td><input type="button" class="rechnerButton" value="6" onclick="rechnerZahlen('6')"></td>
+                        <td><input type="button" class="rechnerButton" value="-" onclick="rechnerZahlen('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="rechnerButton" value="1" onclick="rechnerZahlen('1')"></td>
+                        <td><input type="button" class="rechnerButton" value="2" onclick="rechnerZahlen('2')"></td>
+                        <td><input type="button" class="rechnerButton" value="3" onclick="rechnerZahlen('3')"></td>
+                        <td><input type="button" class="rechnerButton" value="+" onclick="rechnerZahlen('+')"></td>
+                    </tr>
+                    <tr>
+                        <td style="cursor: default;"></td>
+                        <td><input type="button" class="rechnerButton" value="0" onclick="rechnerZahlen('0')"></td>
+                        <td><input type="button" class="rechnerButton" value="." onclick="rechnerZahlen('.')"></td>
+                        <td><input type="button" class="rechnerButton" value="=" onclick="equals()"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </section>
+    <script src="js/script.js">
+    </script>
+</body>
+<html>

@@ -1,0 +1,73 @@
+<!doctype hmtl>
+<html lang="de">
+
+<head>
+	<title>Max</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+	<script>
+		let ei = document.getElementById("egg");
+		let counter = 0
+		function zeigEier() {
+			if (counter == 0) {
+				egg.style.display = "block";
+				console.log("hä");
+				counter = counter + 1;
+			} else {
+				egg.style.display = "none";
+				counter = counter - 1;
+			}
+		}
+		function mehh() {
+			console.log("sieben");
+			let textWithSpace = document.body.innerText;
+			let text = textWithSpace.replace(/[^mM]/g, '');
+			console.log(text)
+			let count = text.length;
+			alert("Es sind " + count + " m's auf der Seite")
+			console.log(count);
+		}
+	</script>
+	<section class="layout">
+		<section class="teilOben">
+			<section class="divOben">
+				<a class="mcs" onclick="zeigEier();">M</a>
+				<a href="index.html" class="max">ax</a>
+				<a href="monkeytype.html" class="wawa">Monkeytype!</a>
+				<a href="rechner.html" class="hobbies" style="margin-right: 15px;">Taschenrechner</a>
+				<a href="galerie.html" class="galerie" style="margin-left: 0;">Galerie</a>
+				<a href="cv.html" class="cv" style="margin-left: 0;">Cv</a>
+			</section>
+		</section>
+		<section class="teilUnten" style="grid-template-columns: 1fr 50vw 1fr;">
+			<div class="teilLinks">
+			</div>
+			<div class="mitte">
+				<h1>Startseite</h1>
+				<h2>Das hier ist die Startseite hier kannst du allgemeine Sachen über mich herausfinden!</h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean urna lectus, elementum vitae condimentum
+				ac, lacinia vel odio. Vestibulum et efficitur sapien. In in egestas tellus. In erat velit, sodales eget
+				diam et, elementum luctus mi. Curabitur sed nunc nec sapien faucibus tincidunt. Interdum et malesuada
+				fames ac ante ipsum primis in faucibus. Fusce faucibus auctor congue. Nam a turpis et mauris fringilla
+				sollicitudin a nec erat. Vivamus quis mi elit. Quisque dui dolor, euismod nec augue quis, consectetur
+				auctor metus. Curabitur sit amet est ornare, mollis diam at, ultrices quam. Quisque scelerisque rutrum
+				euismod. Aenean mollis non ex id viverra.
+			</div>
+		</section>
+	</section>
+	<footer>
+<div class="egg" id="egg" onclick="mehh();">&#129370;</div>
+		<div class="linkSammlung">
+			<p style="font-weight: bold; font-size: 20px;">Linksammlung</p>
+			<ul>
+				<a target="_blank" href="https://dap.bs.ch/Citrix/DAPProdMixedWeb/">dab.bs.ch</a>
+				<a target="_blank" href="https://monkeytype.com/">Monkeytype</a>
+			</ul>
+			<img src="bilder/citrix.png" class="bild">
+		</div>
+		
+	</footer>
+</body>
+<html>
