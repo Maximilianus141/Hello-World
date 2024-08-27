@@ -334,7 +334,7 @@ ul a {
 	display: inline;
 }
 
-.linksCv p {
+.linksCv p, .linksCv h4{
 	font-size: large;
 	margin-top: 10px;
 	margin-left: 10px;
