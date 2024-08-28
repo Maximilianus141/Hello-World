@@ -345,12 +345,18 @@ ul a {
 }
 .bildCv {
 	margin: 6px;
+	position: relative;
+	text-align: center;
 }
 
 .waza {
 	position: absolute;
-	margin: 140px;
 	color: white;
+	top: 50%;
+	bottom: 50%;
+	right: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
 	z-index: 3;
 	display: none;
 }
