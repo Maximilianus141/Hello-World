@@ -334,13 +334,15 @@ ul a {
 	display: inline;
 }
 
-.linksCv p, .linksCv h4{
+.linksCv p{
 	font-size: large;
 	margin-top: 10px;
 	margin-left: 10px;
 	box-shadow: 0 0 10 black;
 }
-
+.linksCv h4{
+	margin-bottom: 5px;
+}
 .bildCv {
 	margin: 6px;
 }
@@ -394,28 +396,17 @@ footer a:hover {
 	text-shadow: 0 0 8px#001B2E;
 }
 
-.schulbildung {
-	display: grid;
-	grid-template-columns: 20% auto auto;
+.schulbildung tr td{
+	padding-left: 15px;
+	font-size: 1.1em;
+	width: fit-content;
 }
-
-.schulbildung h3 {
-	margin-right: 0;
+.schulbildung tr td:nth-child(2){
+	text-align: right;
 }
-
-.schule {
-	grid-column: 1;
+.schulbildung{
+	display: flex;
 }
-
-.schule2 {
-	grid-column: 3;
-}
-
-.schulbildung ul {
-	list-style: none;
-	font-size: 1.2em;
-}
-
 #cvCanvas {
 	border: solid 1px;
 
