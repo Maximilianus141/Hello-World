@@ -309,19 +309,25 @@ ul a {
 }
 
 .mitteCv {
+	margin: auto;
 	margin-top: 50px;
 	height: fit-content;
 	grid-column: 2;
 	box-shadow: 0 0 5px 5px#a0d8e2;
 	display: grid;
-	grid-template-columns: 25% 70%;
+	grid-template-columns: auto auto;
 	margin-bottom: 10px;
 	background-color: rgb(250, 250, 250);
+	width: 100%;
+	max-width: 1200px;
+	border-radius: 2%;
 }
 
 .linksCv {
 	margin: 6px;
 	grid-column: 1;
+	max-width: min-content;
+	margin-right: 0;
 }
 
 #ka {
@@ -372,7 +378,6 @@ ul a {
 }
 
 .rechtsCv {
-	margin-left: 75px;
 	margin-top: 20px;
 }
 .rechtsCv h3{
