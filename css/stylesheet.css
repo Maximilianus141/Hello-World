@@ -411,19 +411,6 @@ footer a:hover {
 	border: solid 1px;
 
 }
-
-.schule3 {
-	grid-column: 2;
-	grid-row: 2;
-	text-align: right;
-}
-
-.schule li,
-.schule2 li,
-.schule3 li {
-	margin-bottom: 5px;
-}
-
 .hobbys {
 	font-size: 1.2em;
 }
@@ -432,25 +419,9 @@ footer a:hover {
 	margin-bottom: 5px;
 }
 .kenntnisse{
-	display: grid;
-	grid-template-columns: 20% 80%;
-	font-size: 1.2em;
+	
 }
-.spalte1{
-	grid-column: 1;
-
-}
-.spalte2{
-	grid-column: 2;
-}
-.spalte1 p{
-	margin: inherit;
-	margin-bottom: 94px;
-}
-.kenntnisse h4{
-	margin: 0;
-}
-.spalte2 p{
-	margin: 0;
-	margin-bottom: 5px;
+.kenntnisse tr td{
+	padding-left: 15px;
+	font-size: 1.1em;
 }
