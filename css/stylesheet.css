@@ -37,8 +37,7 @@
 	}
 
 	;
-}
-
+}	
 body {
 	margin: 0;
 	font-family: sans-serif;
@@ -180,7 +179,7 @@ body {
 	margin-top: 30px;
 	display: grid;
 	grid-template-columns: 20vw auto auto 20vw;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .mitte {
