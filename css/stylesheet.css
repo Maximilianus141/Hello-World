@@ -178,7 +178,7 @@ body {
 	grid-row: 2;
 	margin-top: 30px;
 	display: grid;
-	grid-template-columns: 20vw auto auto 20vw;
+	grid-template-columns: auto auto auto auto;
 	min-height: 100vh;
 }
 
@@ -215,8 +215,9 @@ body {
 	margin: 5px;
 	margin-right: auto;
 	margin-left: auto;
-	height: 480px;
-	width: 640px;
+	height: initial;
+	width: auto;
+	max-width: 640px;
 	animation-timing-function: ease;
 }
 
@@ -247,6 +248,8 @@ body {
 	margin: auto;
 	text-align: center;
 	font-size: 2em;
+	width: auto;
+	max-width: 640px;
 }
 
 #tabelle {

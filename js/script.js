@@ -22,6 +22,7 @@ function imageFunction(x) {
         x.style.position = "fixed";
         x.style.height = "51vw";
         x.style.width = "68vw";
+        x.style.maxWidth = "100vw";
         x.style.marginLeft = "16vw";
         x.style.marginRight = "16vw";
         x.style.zIndex = "3";
@@ -34,6 +35,7 @@ function imageFunction(x) {
         x.style.width = null;
         x.style.marginLeft = null;
         x.style.marginRight = null;
+        x.style.maxWidth = null;
         x.style.zIndex = null;
         backgroundId.style.right = null;
         backgroundId.style.top = null;
